@@ -9,10 +9,11 @@ pandas로 연습한 데이터 처리 코드를 **재사용 가능한 모듈(`fin
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
 
-<!--
 ## 📸 화면
-앱 화면을 캡처해 docs/screenshots/ 에 넣고 아래 주석을 해제하세요.
+
 ![요약 대시보드](docs/screenshots/overview.png)
+
+<!-- 내역관리 화면을 docs/screenshots/management.png 로 저장한 뒤 아래 주석을 해제하세요.
 ![내역관리](docs/screenshots/management.png)
 -->
 
@@ -155,6 +156,7 @@ my-finance-system/
 | 저장 후 필터가 초기화되지 않음 | 위젯 `key` 오타(`veiw_categories`) | `session_state`로 위젯을 제어할 때는 key 문자열이 곧 주소 |
 | CSV "전체 교체"가 항상 "추가"로 동작 | 비교 문자열 앞에 공백(`" 전체 내역 교체"`) | 선택지 문자열은 한 곳에서 정의해 재사용하는 편이 안전 |
 | 안 보이는 탭의 오류로 앱 전체가 멈춤 | Streamlit 탭은 선택 여부와 관계없이 모두 실행됨 | 탭 화면도 매 실행마다 전부 실행된다는 점을 고려해야 함 |
+| 월별 그래프 x축에 `Jan 1, Jan 29…` 같은 엉뚱한 날짜 표시 | `"2026-01"` 문자열을 Plotly가 날짜로 자동 해석 | `fig.update_xaxes(type="category")`로 축 형식을 명시 |
 | 저장해도 반영 안 된 것처럼 보임 | 완료 메시지가 페이지 맨 위에만 표시됨 | 스크롤 위치와 상관없이 보이는 `st.toast`로 피드백 보강 |
 
 ---

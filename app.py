@@ -170,6 +170,8 @@ with overview:
                 labels={"금액": "금액 (원)"},
             )
             fig.update_layout(height=360, margin=dict(l=10, r=10, t=10, b=10), legend_title_text="")
+            # "2026-01" 같은 글자를 plotly가 날짜로 해석해 축에 엉뚱한 날짜가 찍히는 것 방지 → 글자(카테고리)로 표시
+            fig.update_xaxes(type="category")
             st.plotly_chart(fig, width="stretch")
 
         # ── 그래프 아래(전체 너비) : 월별 정리표 ──
