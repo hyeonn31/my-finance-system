@@ -11,11 +11,22 @@ pandas로 연습한 데이터 처리 코드를 **재사용 가능한 모듈(`fin
 
 ## 📸 화면
 
-![요약 대시보드](docs/screenshots/overview.png)
+![요약 대시보드](docs/screenshots/01_overview.png)
 
-<!-- 내역관리 화면을 docs/screenshots/management.png 로 저장한 뒤 아래 주석을 해제하세요.
-![내역관리](docs/screenshots/management.png)
--->
+<table>
+  <tr>
+    <td width="50%"><b>월별 정리표 · 큰 지출</b><br>목표 금액 대비 차이와 남은 비율을 함께 표시<br><img src="docs/screenshots/02_monthly_report.png"></td>
+    <td width="50%"><b>새 내역 추가</b><br>폼에 모아 한 번에 제출, 검증 실패 시 오류 행 안내<br><img src="docs/screenshots/03_add_record.png"></td>
+  </tr>
+  <tr>
+    <td><b>전체 내역 수정·삭제</b><br>엑셀처럼 셀을 직접 고치고 행을 추가·삭제<br><img src="docs/screenshots/04_edit_table.png"></td>
+    <td><b>조회 필터</b><br>구분·항목을 골라 원하는 내역만 확인<br><img src="docs/screenshots/05_filter.png"></td>
+  </tr>
+  <tr>
+    <td><b>CSV 가져오기 · 다운로드</b><br>업로드 검증 후 추가/교체, 백업·요약 CSV 5종<br><img src="docs/screenshots/06_csv.png"></td>
+    <td><b>코드 학습</b><br>수업에서 배운 pandas 코드와 앱 코드의 연결<br><img src="docs/screenshots/07_lesson.png"></td>
+  </tr>
+</table>
 
 ---
 
